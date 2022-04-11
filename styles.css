@@ -1,31 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: rebeccapurple;
+    background-color: #445760;
     color: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: "Poppins", sans-serif;
+    font-family: "Oxygen", sans-serif;
     margin: 0;
     min-height: 100vh;
 }
 
+.header{
+    margin-bottom: 5rem;
+    font-family: inherit;
+    transition: all 1.4s;
+}
+.header:hover{
+    transform: scale(-1.05);
+    transform: rotate(600deg);
+}
 .pw-container {
-    background-color: rgb(46, 12, 80);
+    background-color: #425B60;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     min-width: 400px;
+    border-radius: 25px;
+    transition: all .5s;
+}
+.pw-container:hover{
+    transform: scale(1.05);
 }
 .pw-header {
     padding: 1rem;
 }
 
 .pw {
-    background-color: rgb(69, 28, 109);
+    background-color: #445760;
     display: flex;
     font-size: 1.5rem;
     align-items: center;
@@ -34,6 +48,7 @@ body {
     position: relative;
     padding: 1rem;
     overflow: auto;
+    border-radius: 25px;
 }
 .pw button {
     background-color: white;
@@ -42,13 +57,14 @@ body {
     cursor: pointer;
     font-family: inherit;
     font-weight: bold;
-    padding: 0.25rem;
+    padding: .5rem 0.25rem ;
     position: absolute;
-    top: 0;
+    top: 20px;
     right: 0;
     transform: translate(0, 20%);
     transition: opacity 0.2s ease, transform 0.2s ease;
     opacity: 0;
+    border-radius: 10px;
 }
 .pw:hover button {
     opacity: 1;
@@ -65,9 +81,9 @@ body {
     margin: 0.75rem 0;
 }
 .generate {
-    background-color: #ecb602;
+    background-color: #445760;
     border: none;
-    color: rebeccapurple;
+    color: white;
     cursor: pointer;
     display: block;
     font-size: 1.5rem;
@@ -75,4 +91,10 @@ body {
     padding: 0.75rem;
     margin-top: 1rem;
     width: 100%;
+    border-radius: 20px;
+    transition: all .4s;
+}
+.generate:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transform: scale(1.02);
 }
