@@ -50,7 +50,17 @@ body {
     transition: opacity 0.2s ease, transform 0.2s ease;
     opacity: 0;
 }
-.pw{
-    
+.pw:hover button {
+    opacity: 1;
+    transform: translate(0, 0%);
+}
+.pw-body {
+    padding: 0 1rem 1rem;
 }
 
+.form-control {
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
