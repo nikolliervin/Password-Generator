@@ -64,3 +64,15 @@ body {
     justify-content: space-between;
     margin: 0.75rem 0;
 }
+.generate {
+    background-color: #ecb602;
+    border: none;
+    color: rebeccapurple;
+    cursor: pointer;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    width: 100%;
+}
