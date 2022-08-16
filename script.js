@@ -35,9 +35,14 @@ function generatePassword() {
     if (uppercaseElement.checked) {
         password += getUppercase();
         password += getUppercase();
+        password += getUppercase();
+        password += getUppercase();
     }
 
+
     if (lowercaseElement.checked) {
+        password += getLowercase();
+        password += getLowercase();
         password += getLowercase();
         password += getLowercase();
     }
@@ -45,9 +50,13 @@ function generatePassword() {
     if (numberElement.checked) {
         password += getNumber();
         password += getNumber();
+        password += getNumber();
+        password += getNumber();
     }
 
     if (symbolElement.checked) {
+        password += getSymbol();
+        password += getSymbol();
         password += getSymbol();
         password += getSymbol();
     }
