@@ -1,4 +1,4 @@
-const passwordTextBox = document.getElementById("pw");
+const passwordTextBox = document.getElementById("password");
 const copyBtn = document.getElementById("copy");
 const lengthElement = document.getElementById("len");
 const uppercaseElement = document.getElementById("uppercase");
